@@ -14,7 +14,7 @@
         <div class="sadrzaj-1">
           <ul>
             <li>
-              <a href="#"><img src="../photos/download.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika1.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -28,10 +28,7 @@
 
             <li>
               <a href="#"
-                ><img
-                  src="../photos/download1.jpg"
-                  alt=""
-                  onclick="changeStyle"
+                ><img src="../photos/slika2.jpg" alt="" onclick="changeStyle"
               /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
@@ -45,7 +42,7 @@
             </p>
 
             <li>
-              <a href="#"><img src="../photos/download2.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika3.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -62,7 +59,7 @@
         <div class="sadrzaj-2">
           <ul>
             <li>
-              <a href="#"><img src="../photos/download3.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika4.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -75,7 +72,7 @@
             </p>
 
             <li>
-              <a href="#"><img src="../photos/download4.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika5.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -87,7 +84,7 @@
               nulla pariatur
             </p>
             <li>
-              <a href="#"><img src="../photos/images5.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika6.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -103,7 +100,7 @@
         <div class="sadrzaj-3">
           <ul>
             <li>
-              <a href="#"><img src="../photos/images6.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika7.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -116,7 +113,7 @@
             </p>
 
             <li>
-              <a href="#"><img src="../photos/images7.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika8.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -128,7 +125,7 @@
               nulla pariatur
             </p>
             <li>
-              <a href="#"><img src="../photos/images8.jpg" alt="" /></a>
+              <a href="#"><img src="../photos/slika9.jpg" alt="" /></a>
             </li>
             <div><h2>Lorem ipsum</h2></div>
             <p>
@@ -143,5 +140,19 @@
         </div>
       </div>
     </div>
+    <script>
+      var imgs = document.querySelectorAll("img");
+
+      for (let i = 0; i < imgs.length; i++) {
+        imgs[i].addEventListener("click", function () {
+          imgs[i].style.transition = "transform 0.25s ease";
+          if (imgs[i].style.transform === "scale(2.5)") {
+            imgs[i].style.transform = "scale(1)";
+          } else {
+            imgs[i].style.transform = "scale(2.5)";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
